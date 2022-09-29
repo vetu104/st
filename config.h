@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Fira Code:size=13";
-static int borderpx = 64;
+static int borderpx = 32;
 
 /*
  * What program is execed by st depends of these precedence rules:
