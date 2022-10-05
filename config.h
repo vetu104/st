@@ -202,6 +202,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ MODKEY,               XK_k,           kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_j,           kscrolldown,    {.i = -1} },
 };
@@ -475,3 +476,5 @@ static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
+
+/* vim: set noexpandtab: */
