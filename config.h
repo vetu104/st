@@ -172,11 +172,11 @@ static uint forcemousemod = ShiftMask;
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
  */
-const unsigned int mousescrollincrement = 5;
+const unsigned int scrollincrement = 5;
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = mousescrollincrement },		0, /* !alt */ -1 },
-	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = mousescrollincrement },		0, /* !alt */ -1 },
+	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = scrollincrement },		0, /* !alt */ -1 },
+	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = scrollincrement },		0, /* !alt */ -1 },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
@@ -203,8 +203,8 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
-	{ MODKEY,               XK_k,           kscrollup,      {.i = -1} },
-	{ MODKEY,               XK_j,           kscrolldown,    {.i = -1} },
+	{ MODKEY,               XK_k,           kscrollup,      {.i = scrollincrement} },
+	{ MODKEY,               XK_j,           kscrolldown,    {.i = scrollincrement} },
 };
 
 /*
