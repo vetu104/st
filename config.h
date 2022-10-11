@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Fira Code:size=13";
+static char *font = "Fira Code:size=11";
 static int borderpx = 32;
 
 /*
@@ -194,8 +194,6 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
@@ -205,6 +203,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ MODKEY,               XK_k,           kscrollup,      {.i = scrollincrement} },
 	{ MODKEY,               XK_j,           kscrolldown,    {.i = scrollincrement} },
+	{ TERMMOD,              XK_k,        	zoom,           {.f = -1} },
+	{ TERMMOD,              XK_j,       	zoom,           {.f = +1} },
 };
 
 /*
