@@ -194,7 +194,6 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
@@ -203,8 +202,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ MODKEY,               XK_k,           kscrollup,      {.i = scrollincrement} },
 	{ MODKEY,               XK_j,           kscrolldown,    {.i = scrollincrement} },
-	{ TERMMOD,              XK_k,        	zoom,           {.f = -1} },
-	{ TERMMOD,              XK_j,       	zoom,           {.f = +1} },
+	{ TERMMOD,              XK_K,        	zoom,           {.f = -1} },
+	{ TERMMOD,              XK_J,       	zoom,           {.f = +1} },
+	{ TERMMOD,              XK_L,	        zoomreset,      {.f =  0} },
 };
 
 /*
